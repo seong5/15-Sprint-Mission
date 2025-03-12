@@ -7,80 +7,86 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 네비게이션 -->
-    <header class="nav-bar">
-      <a href="'/'" target="_blank">
-        <img  class="logo" src="Property 1=sm.png">
+  <!-- header 시작 -->
+  <header class ="header">
+    <a href= "'/'">
+      <img src="../images/Property 1=sm.png" alt="판다마켓" class="header_img"></a>
+    <a href="login.html" target="_blank" class="login_btn">
+      <img src="../images/btn_small.png" alt="btn_small.png" class="login">
+    </a>
+  </header>
+  <main>
+    <!-- 일상의 모든 물건-->
+    <section class="top_banner">
+      <div class="banner_1">
+        <div class="banner-text">
+          일상의 모든 물건을<br>
+          거래해보세요
+        </div>
+      <a href="/items" target="blank" class="more_btn">
+        <img src="../images/btn_large.png" alt="btn_large.png" class="morebtn">
       </a>
-      <a href="/login" target="_blank">
-        <img class="login-btn" src="btn_small.png">
-      </a>  
-    </header>
-  <!--본문 시작-->
-  <figure>
-    <div class="home-top">
-      <p class="words"> 일상의 모든 물건을<br>거래해 보세요</p>
-      <img src="Img_home_top.png" class="top-image">
-      <a href="/items" target="_blank">
-        <img class="show-more-btn" src="btn_large.png" alt="구경하러 가기">
-      </a>
+        <img src="../images/Img_home_top.png" class="topbannerimg">
+      </div>
+    </section>
+    <section class="paragraph">
+      <!-- 인기상품 -->
+      <div class ="para1">
+        <img src="../images/Img_home_01.png" alt="para1-img" class="pimg1">
+         <div class="para-text">
+          <h5 class="smtx">Hot item</h5><br>
+          <h3 class="smtx2">인기 상품을<br>
+          확인해 보세요</h3>
+          <p class="smtx3">가장 HOT한 중고거래 물품을 판다 마켓에서 확인해보세요</p>
+         </div> 
+      </div>
+      <!-- 구매를원하는 -->
+      <div class= "para2">
+          <div class="para-text">
+           <h5 class="smtx">Search</h5><br>
+           <h3 class="smtx2">구매를 원하는<br>
+           상품을 검색하세요</h3>
+           <p class="smtx3">구매하고 싶은 물품은 검색해서 쉽게 찾아보세요</p>
+          </div>
+      <img src="../images/Img_home_02.png" alt="para2-img" class="pimg2">  
+      </div>
+      <!-- 판매를원하는 -->
+      <div class="para3">
+        <img src="../images/Img_home_03.png" alt="para3-img" class="pimg3">
+        <div class="para-text">
+         <h5 class="smtx">Register</h5>
+         <h3 class="smtx2">판매를 원하는<br>
+         상품을 등록하세요</h3>
+         <p class="smtx3">어떤 물건이든 판매하고 싶은 상품을 쉽게 등록하세요</p>
+        </div>
+      </div>  
+
+    </section>
+    <section class="bot-banner">
+      <div class="botban-text">
+        <div class="bot-text"> 
+         믿을 수 있는<br>
+         판다마켓 중고거래
+        </div>
+        <img src="../images/Img_home_bottom.png" class="bot_img">
+      </div>
+    </section>
+  </main>
+  <!-- footer 시이작-->
+  <footer class="footer">
+    <div class ="footer-text">
+      <span>@codeit - 2024</span>
+      <div class ="policy">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/FAQ">FAQ</a>
+      </div>
+      <span class="sns-icon">
+        <img src="../images/ic_facebook.png" alt="페이스북">
+        <img src="../images/ic_twitter.png" alt="트위터">
+        <img src="../images/ic_youtube.png" alt="유튜브">
+        <img src="../images/ic_instagram.png" alt="인스타그램">
+      </span>
     </div>
-  </figure>
-  <figure class="first-p">
-      <img class="hot-item" src="desktop_02.png">
-  </figure>
-  <figure class="second-p">
-      <img class="search-item" src="desktop_03.png">
-  </figure>
-  <figure class="third-p">
-      <img class="resister-item" src="desktop_04.png">
-  </figure>
-<section>
-  <div class="home-bottom">
-    <p class="bottom-word">믿을 수 있는<br> 판다마켓 중고 거래</p>
-    <img src="Img_home_bottom.png" class="bottom-img">
-  </div>  
-</section>
-
-<!--푸터 시작-->
-<footer class="footer-style">
-  <span class="footer-inner">
-    <span class="codeit-2024">@codeit - 2024</span>
-
-    <!--Privacy Policy , FAQ 시작-->
-    <span class="footer-link">
-      <a href="/privacy">
-        <span class="Policy">Privacy Policy</span>
-      </a>
-      <a href="/faq">
-        <span class="FAQ">FAQ</span>
-      </a>
-    </span>
-
-  <!--소셜미디어 링크 시작-->
-  <div class="social-ic">
-    <a href="https://www.facebook.com/" target="_blank">
-      <span class="ic_fb">
-        <img src="ic_facebook.png">   
-      </span>
-    </a>
-    <a href="https://x.com/" target="_blank">
-      <span class="ic_tw">
-        <img src="ic_twitter.png">
-      </span>
-    </a>
-    <a href="https://www.youtube.com/" target="_blank"> 
-      <span class="ic_yt">
-        <img src="ic_youtube.png">
-      </span>
-    </a>
-    <a href="https://www.instagram.com/" target="_blank"> 
-      <span class="ic_ig">
-        <img src="ic_instagram.png">
-      </span>
-    </a>
-  </span>    
-  </div>
-</footer>  
+  </footer>
 </body>
 </html>
