@@ -7,8 +7,16 @@ body{
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
+  
 }
 
+@media (max-width: 767px) and (min-width: 375px) {
+  body {
+    width: calc(100% - 32px);
+    padding: 0 16px;
+  }
+
+}
 
 .loginpage {
   width: 80%;
@@ -23,14 +31,13 @@ body{
   flex-direction: column;
   gap: 25px;
   padding: 0;
-
-  
 }
 
 .loginimg {
-  width: 396px;
-  height: 132px;
-  margin: 0 auto 20px;
+  width: auto;
+  height: 100%;
+  margin: 0 auto 10px;
+  max-width: 100%;
 }
 
 .loginform {
@@ -57,11 +64,12 @@ body{
   font-size: 16px;
   width: 100%;
   height: 48px;
+  box-sizing: border-box;
   border: 1px solid #ddd;
   border-radius: 12px;
   background-color: #f3f4f6;
   outline: none;
-  padding: 0 12px;
+  padding: 0 16px;
 }
 
 .pswdform {
@@ -101,4 +109,5 @@ body{
   padding: 20px auto;
   gap: 10px;
   font-size: 16px;
+  box-sizing: border-box;
 }
