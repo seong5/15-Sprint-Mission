@@ -1,11 +1,41 @@
+body {
+  margin: 0;
+}
+
+/* PC ver*/
+@media (min-width: 1200px) {
+  .container {
+    width:50%;
+
+  }
+/*  Tablet ver */
+@media (max-width: 1199px) and (min-width: 768px) {
+  body {
+    width: 70%;
+  }
+  .header {
+    padding: 0 24px;
+  }
+}
+/*  Mobile ver */
+@media (max-width: 767px) and (max-width: 375px) {
+  body {
+    width:90%;
+  }
+  .header {
+    padding: 0 16px;
+  }
+}
+
+}
 .header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 70px;
+  height: 50px;
   background-color: white;
   border-bottom: 1px solid gray;
-  position: fixed;
+  position: sticky;
   align-items: center;
   top: 0;
   left: 0;
@@ -17,7 +47,7 @@
   width: 153px;
   height: 51px;
   margin: 20px;
-  padding: 20px;
+  padding: 0 20px;
   cursor: pointer;
 }
 
@@ -56,20 +86,30 @@
   align-items: center;
   gap: 32px;
   max-width: fit-content;
-
-
 }
 
-.banner-text{
+.banner_text{
   font-weight: 500;
   font-size: 2rem;
   line-height: 56px;
 }
 
-.morebtn {
-  display: inline-block;
+.more_btn{
+  display:inline;
+}
+
+.showmorebtn {
+  background-color: #3692ff;
+  gap: 10px;
+  border-radius: 40px;
+  display: block;
   padding: 10px;
-  width: 70%;;
+  width: 110%;
+  height: 30px;
+  color: #f9fafb;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
 }
 
 .smtx{
@@ -136,15 +176,6 @@ margin: 0;
   flex-direction: column;
 
 }
-
-
-@media (min-width: 1920px) {
-  .nav-bar{
-    
-  }
-}
-
-
 
 .first-p{
   width: 1920px;

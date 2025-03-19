@@ -10,7 +10,12 @@ body{
 }
 
 
-
+@media (max-width: 767px) and (min-width: 375px) {
+  body {
+    width: calc(100% - 32px);
+    padding: 0 16px;
+  }
+}
 
 .signup-page {
   width: 80%;
@@ -26,13 +31,15 @@ body{
   gap: 10px;
   padding: 24px 0;
   font-size: 16px;
+  width: 100%;
 
 }
 
 .loginimg {
-  width: 396px;
-  height: 132px;
+  width: auto;
+  height: 100%;
   margin: 0 auto 20px;
+  max-width: 100%;
 }
 
 .loginform {
@@ -78,6 +85,7 @@ body{
   background-color: #f3f4f6;
   outline: none;
   gap: 10px;
+  max-width: 100%;
 }
 
 .pswdform {
